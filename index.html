@@ -1,39 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
-  <title>Musical Keyboard</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--Iconos-->
+    <script
+      src="https://kit.fontawesome.com/b5764fffd2.js"
+      crossorigin="anonymous"
+    ></script>
+        <!--google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script> <!--IMPORTANTE......................chechar defer https://cybmeta.com/diferencia-async-y-defer -->
+    <title>Musical Keyboard</title>
+  </head>
+  <body>
+<body>
+  <h1>Musical Keyboard</h1>
+  <div id="instrucciones">
+    <div id="texto">
+      <p>Para tocar el piano se utiliza el teclado, si se quieren tocar las teclas blancas, o de un tono de separacion,
+        se utiliza el renglon que contiene las teclas: z, x, c, v, b, n, m. Por otro lado si se quiere tocar las teclas negras, 
+        se utiliza el renglon que contiene las teclas: s, d, g, h, j. Se utilizo esta configuración por ser similar a la de un teclado 
+        real, como se muestra en la imágen. El teclado tiene un rango de una octava y funciona tambien al dar click a las teclas.
+      </p>
+    </div>
+    <img id="imagen" src="assets/instrucciones.jpeg" alt="">
+  </div>
   <div class="piano">
-    <div data-note="C" class="key white"></div>
-    <div data-note="Db" class="key black"></div>
-    <div data-note="D" class="key white"></div>
-    <div data-note="Eb" class="key black"></div>
-    <div data-note="E" class="key white"></div>
-    <div data-note="F" class="key white"></div>
-    <div data-note="Gb" class="key black"></div>
-    <div data-note="G" class="key white"></div>
-    <div data-note="Ab" class="key black"></div>
-    <div data-note="A" class="key white"></div>
-    <div data-note="Bb" class="key black"></div>
-    <div data-note="B" class="key white"></div>
+    <div data-note="C" class="key white"></div><!--El primer div estara asociado a la nota Do(C)-->
+    <div data-note="Db" class="key black"></div><!--El segundo div estara asociado a la nota Re bemol(Db)-->
+    <div data-note="D" class="key white"></div><!--El tercer div estara asociado a la nota Re (D)-->
+    <div data-note="Eb" class="key black"></div><!--El cuarto div estara asociado a la nota Mi bemol (Eb)-->
+    <div data-note="E" class="key white"></div><!--El quinto div estara asociado a la nota Mi (E)-->
+    <div data-note="F" class="key white"></div><!--El sexto div estara asociado a la nota Fa (F)-->
+    <div data-note="Gb" class="key black"></div><!--El septimo div estara asociado a la nota Sol bemol(Gb)-->
+    <div data-note="G" class="key white"></div><!--El octavo div estara asociado a la nota Sol (G)-->
+    <div data-note="Ab" class="key black"></div><!--El noveno div estara asociado a la nota La bemol (Ab)-->
+    <div data-note="A" class="key white"></div><!--El decimo primer div estara asociado a la nota La (A)-->
+    <div data-note="Bb" class="key black"></div><!--El decimo segundo div estara asociado a la nota Si bemol (Bb)-->
+    <div data-note="B" class="key white"></div><!--El decimo tercero div estara asociado a la nota Si (B)-->
   </div>
 
-  <audio id="C" src="notes/C.mp3"></audio>
-  <audio id="Db" src="notes/Db.mp3"></audio>
-  <audio id="D" src="notes/D.mp3"></audio>
-  <audio id="Eb" src="notes/Eb.mp3"></audio>
-  <audio id="E" src="notes/E.mp3"></audio>
-  <audio id="F" src="notes/F.mp3"></audio>
-  <audio id="Gb" src="notes/Gb.mp3"></audio>
-  <audio id="G" src="notes/G.mp3"></audio>
-  <audio id="Ab" src="notes/Ab.mp3"></audio>
-  <audio id="A" src="notes/A.mp3"></audio>
-  <audio id="Bb" src="notes/Bb.mp3"></audio>
-  <audio id="B" src="notes/B.mp3"></audio>
-</body>
+
+  <!--Archivos de audio con "id" asociados a los divs-->
+    <audio src="notes/C.mp3" id="C"></audio>
+    <audio src="notes/Db.mp3" id="Db"></audio>
+    <audio src="notes/D.mp3" id="D"></audio>
+    <audio src="notes/Eb.mp3" id="Eb"></audio>
+    <audio src="notes/E.mp3" id="E"></audio>
+    <audio src="notes/F.mp3" id="F"></audio>
+    <audio src="notes/Gb.mp3" id="Gb"></audio>
+    <audio src="notes/G.mp3" id="G"></audio>
+    <audio src="notes/Ab.mp3" id="Ab"></audio>
+    <audio src="notes/A.mp3" id="A"></audio>
+    <audio src="notes/Bb.mp3" id="Bb"></audio>
+    <audio src="notes/B.mp3" id="B"></audio>
+
+    <footer>
+      <p>
+        &copy; Created for:
+        <a href="https://twitter.com/albertoouu" target="_blank"
+          >Albertoouu <i class="fas fa-robot"></i
+        ></a>
+      </p>
+  </footer>
+  </body>
 </html>
